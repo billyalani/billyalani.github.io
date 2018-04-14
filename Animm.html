@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/CelaniEbbasta/Desktop/CSS/Animation/line.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anim</title>
+<style>
+#TXT {
+		margin: 0px;
+        font-size: 300%;
+        font-family: impact;
+        position: relative;
+        height: 50px;
+        
+        display: inline-block;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        
+}
+#line {
+        width: 60px;
+        height: 5px;  
+        background-color: green;        
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        position: relative;
+		margin: 0px;
+}
+
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px; width: 60px;}
+    25%  {background-color:yellow; left:299px; top:0px; width: 20px;}
+    50%  {background-color:blue; left:299px; top:70px; width: 50px;}
+    75%  {background-color:green; left:-8px; top:70px; width: 10px;}
+    100% {background-color:red; left:0px; top:0px; width: 5px;}
+}
+</style>
+</head>
+<body>
+<div id="line"></div>
+<p id="TXT"> HHHEEEYYYYYYY </p>
+<br>
+<br>
+<br>
+<p>ΧΕΛΛΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟ</p>
+
+</body></html>
