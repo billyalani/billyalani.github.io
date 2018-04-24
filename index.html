@@ -1,45 +1,76 @@
-<!DOCTYPE html>
-<!-- saved from url=(0062)file:///C:/Users/CelaniEbbasta/Desktop/CSS/Animation/line.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Anim</title>
-<style>
-#TXT {
-		margin: 0px;
-        font-size: 300%;
-        font-family: impact;
-        position: relative;
-        height: 50px;
-        
-        display: inline-block;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-        
-}
-#line {
-        width: 60px;
-        height: 5px;  
-        background-color: green;        
-        animation-name: example;
-        animation-duration: 2s;
-        animation-iteration-count:infinite;
-        position: relative;
-		margin: 0px;
-}
-
-@-webkit-keyframes example {
-    0%   {background-color:red; left:0px; top:0px; width: 60px;}
-    25%  {background-color:yellow; left:299px; top:0px; width: 20px;}
-    50%  {background-color:blue; left:299px; top:70px; width: 50px;}
-    75%  {background-color:green; left:-8px; top:70px; width: 10px;}
-    100% {background-color:red; left:0px; top:0px; width: 5px;}
-}
-</style>
+﻿<html>
+<head>
+<link rel="stylesheet" type="text/css" href="22.css">
 </head>
 <body>
-<div id="line"></div>
-<p id="TXT"> HHHEEEYYYYYYY </p>
-<br>
-<br>
-<br>
-<p>ΧΕΛΛΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟΟ</p>
+<div id="MN">
+<a href="https://www.facebook.com"><img id="I1" src="https://png.icons8.com/ios/1600/facebook-circled-filled.png"></a>
+<a href="https://www.instagram.com"><img id="I2" src="http://pngimg.com/uploads/instagram/instagram_PNG16.png"></a>
+<a href="https://www.twitter.com"><img id="I3" src="https://png.icons8.com/metro/1600/twitter.png"></a>
+</div>
+<ul class="menu cf">
+  <li><a href="">Home</a></li>
+  <li>
+    <a href="">Created By</a>
+    <ul class="submenu">
+      <li><a href="https://www.instagram.com/celani_de/">Βασιλης</a></li>
+      <li><a href="">Εβελινα</a></li>
+      <li><a href="">Φανη</a></li>
+      <li><a href="">Ερρικα</a></li>
+      <li><a href="">Αντιγονη</a></li>
+    </ul>			
+  </li>
+  <li><a href="http://lyk-n-kallikr.chal.sch.gr/">σχολειο</a></li>
+  <li><a href="Video.html">video</a></li>
+  <li onclick="topFunction4()"><a href="">σχετικα με εμας</a></li>
+</ul>
+<input type="button" name="BN" value="Που μας βοιθαει" id="BN" onclick="topFunction()">
+<input type="button" name="BN" value="Σε τι μας χρησιμευει" id="BN2" onclick="topFunction2()">
+<input type="button" name="BN" value="Αλλη κατηγορια" id="BN3" onclick="topFunction3()">
+<h1 id="TN" align="center">Τεχνητή Νοημοσύνη</h1>
+<img src="http://physics4u.gr/blog/wp-content/uploads/2017/06/artificial-intelligence.jpg" align="left" id="P1">
+<div id="bg1"></div>
+<div id="kmn1">
+<b>Ο όρος τεχνητή νοημοσύνη αναφέρεται στον κλάδο της πληροφορικής ο οποίος ασχολείται με τη σχεδίαση και την υλοποίηση υπολογιστικών συστημάτων που μιμούνται στοιχεία της ανθρώπινης συμπεριφοράς τα οποία υπονοούν έστω και στοιχειώδη ευφυΐα: μάθηση, προσαρμοστικότητα, εξαγωγή συμπερασμάτων, κατανόηση από συμφραζόμενα, επίλυση προβλημάτων κλπ. Ο Τζον Μακάρθι όρισε τον τομέα αυτόν ως «επιστήμη και μεθοδολογία της δημιουργίας νοούντων μηχανών».<b>
+</div>
+<div id="bg2"></div>
+<h6 id="kmn2">Η τεχνητή νοημοσύνη αποτελεί σημείο τομής μεταξύ πολλαπλών επιστημών όπως</h6>
+<ul id="list" align="center">
+<li>πληροφορικής</li>
+<li>ψυχολογίας</li>
+<li>φιλοσοφίας</li>
+<li>νευρολογίας</li>
+<li>γλωσσολογίας</li>
+<li>επιστήμης μηχανικών</li>
+</ul>
+<h1 id="TS">Στόχος</h1>
+<img src="https://www.quierotec.com/wp-content/uploads/2017/10/Ventajas-de-la-Inteligencia-Artificial.jpg" align="left" id="P2">
+<div id="bg3"></div>
+<div id="kmn3"><b>
+Η σύνθεση ευφυούς συμπεριφοράς, με στοιχεία συλλογιστικής, μάθησης και προσαρμογής στο περιβάλλον, ενώ συνήθως εφαρμόζεται σε μηχανές ή υπολογιστές ειδικής κατασκευής. Διαιρείται στη συμβολική τεχνητή νοημοσύνη, η οποία επιχειρεί να εξομοιώσει την ανθρώπινη νοημοσύνη αλγοριθμικά χρησιμοποιώντας σύμβολα και λογικούς κανόνες υψηλού επιπέδου, και στην υποσυμβολική τεχνητή νοημοσύνη, η οποία προσπαθεί να αναπαράγει την ανθρώπινη ευφυΐα χρησιμοποιώντας στοιχειώδη αριθμητικά μοντέλα που συνθέτουν επαγωγικά νοήμονες συμπεριφορές με τη διαδοχική αυτοοργάνωση απλούστερων δομικών συστατικών («συμπεριφορική τεχνητή νοημοσύνη»), προσομοιώνουν πραγματικές βιολογικές διαδικασίες όπως η εξέλιξη των ειδών και η λειτουργία του εγκεφάλου («υπολογιστική νοημοσύνη»), ή αποτελούν εφαρμογή στατιστικών μεθοδολογιών σε προβλήματα ΤΝ.
+Η διάκριση σε συμβολικές και υποσυμβολικές προσεγγίσεις αφορά τον χαρακτήρα των χρησιμοποιούμενων εργαλείων, ενώ δεν είναι σπάνια η σύζευξη πολλαπλών προσεγγίσεων (διαφορετικών συμβολικών, υποσυμβολικών, ή ακόμα συμβολικών και υποσυμβολικών μεθόδων) κατά την προσπάθεια αντιμετώπισης ενός προβλήματος. Με βάση τον επιθυμητό επιστημονικό στόχο η ΤΝ κατηγοριοποιείται σε άλλου τύπου ευρείς τομείς, όπως επίλυση προβλημάτων, μηχανική μάθηση, ανακάλυψη γνώσης, συστήματα γνώσης κλπ. Επίσης υπάρχει επικάλυψη με συναφή επιστημονικά πεδία όπως η μηχανική όραση, η επεξεργασία φυσικής γλώσσας ή η ρομποτική, τα οποία μπορούν να τοποθετηθούν μες στο ευρύτερο πλαίσιο της σύγχρονης τεχνητής νοημοσύνης ως ανεξάρτητα πεδία της.
 
-</body></html>
+<b></div>
+<script>
+// Που μας βοιθαει
+function topFunction() {
+    document.body.scrollTop = 640;
+    document.documentElement.scrollTop = 610;
+}
+// Σε τι μας χρησιμευει
+function topFunction2() {
+    document.body.scrollTop = 1300;
+    document.documentElement.scrollTop = 1300;
+}
+// Αλλη κατηγορια 
+function topFunction3() {
+    document.body.scrollTop = 2000;
+    document.documentElement.scrollTop = 2000;
+}
+function topFunction4() {
+    window.alert('Οι μαθητές του Λυκείου Ν.Καλλικράτειας αφιέρωσαν τις τελευταίες εβδομάδες εργαζόμενοι στο θέμα της τεχνητής νοημοσύνης-Ρομποτικής.Αναντίρρητα μελετήσαμε εξωνυχιστικά το παραπάνω θέμα με αποτέλεσμα την ολοκληρωση του σκοπου.Σκοπος ηταν η πληροφορηση και η αμβλυνση των τυχον προκαταληψεων οσον αφορα τη Ρομποτικη.Παρα την λεπτοτητα του θεματος καταφεραμε με επιτυχια να καλυψουμε και τα δυο θεματα που περικλυονται στην τεχνητη νοημοσυνη. Στην καθημερινοτητα και στην ιατρικη.Ελπιζουμε να φανουν ενδιαφερον και να αντιμετωπιστουν ως σφυρι που θα γκρεμισει το τειχος των προκαταληψεων που εχει ριζωθει στο θεμα αυτο.   ');
+    
+}
+</script>
+</body>
+</html>

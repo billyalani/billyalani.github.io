@@ -1,0 +1,357 @@
+/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Main level */
+.menu {			
+  margin: 0px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menu > li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background: #e74c3c;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+body {
+     margin: 0px;
+       
+       background-image:url('http://www.gettingsmart.com/wp-content/uploads/2017/09/artificial-intelligence-education.jpg');
+       background-size: 100%;
+       background-attachment: fixed;
+       height: 10000px;
+}
+#I1 {
+     height: 55px;
+     width:  55px;
+     position: relative;
+}
+#I2 {
+     height: 55px;
+     width:  55px;
+     position: relative;
+     display: block;
+}
+#I3 {
+     height: 55px;
+     width:  55px;
+     position: relative;
+     display: block;
+} 
+#I1:hover {
+           height: 60px;
+           width:  60px;
+           opacity: 0.6;
+}
+#I2:hover {
+           height: 60px;
+           width:  60px;
+           opacity: 0.6;
+}
+#I3:hover {
+           height: 60px;
+           width:  60px;
+           opacity: 0.6;
+}
+#MN {
+      height: 55px;
+      width:  55px;
+      position: fixed;
+      top: 120px;
+      left: 1260px;
+}
+#BN {
+       left: 5px;       
+       border: none;
+       color: white;
+       background-color: red;
+       font-family: impact;
+       font-size: 200%;
+       cursor: pointer;
+       transition: all 1s ease-out;
+       position: relative;
+       top: 100px;
+       box-shadow: 5px 10px 18px black;
+
+}
+#BN:hover {
+             background-color: green;
+             box-shadow: 0px 0px 0px;
+}
+#BN2 {
+       left: 5px;
+       border: none;
+       color: white;
+       background-color: red;
+       font-family: impact;
+       font-size: 200%;
+       cursor: pointer;
+       transition: all 1s ease-out;
+       position: relative;
+       top: 120px;
+       display: block;
+       box-shadow: 5px 10px 18px black;
+}
+#BN2:hover {
+             background-color: green;
+             box-shadow: 0px 0px 0px;
+}
+#BN3 {
+       left: 5px;
+       border: none;
+       color: white;
+       background-color: red;
+       font-family: impact;
+       font-size: 200%;
+       cursor: pointer;
+       transition: all 1s ease-out;
+       position: relative;
+       top: 140px;
+       display: block;
+       box-shadow: 5px 10px 18px black;
+}
+#BN3:hover {
+             background-color: green;
+             box-shadow: 0px 0px 0px;
+}
+#TN {
+      font-size: 300%;
+      font-family: impact;
+      color: black;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      animation-name: example;
+      animation-duration: 3s;
+      animation-delay: 0,5s;
+      animation-iteration-count: infinite;
+      position: relative;
+      top: 450px;
+      display: block;
+}
+@keyframes example {
+    0%   {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    25%  {color:darkblue; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;}
+    50%  {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    75%  {color:darkblue; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;}
+    100% {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+}
+#P1 {
+    height: 450px;
+    width:  580px;
+    position: relative;
+    top: 480px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+}
+#kmn1 {
+        position: relative; 
+        top: 50px;
+        font-family: arial;
+        width: 600px;
+        text-align: left;
+        left: 600px;
+}
+#bg1 {
+      height: 150px;
+      width:  600px;
+      background-color: white;
+      position: relative;
+      top: 500px;
+      left: 600px;
+      box-shadow: 5px 10px 18px black;
+}
+#kmn2 {
+        position: relative; 
+        top: 55px;
+        font-family: impact;
+        font-size: 130%;
+        width: 600px;
+        text-align: left;
+        left: 605px;
+        text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+#list {
+       position: absolute; 
+       top: 1020px;
+       font-family: impact;
+       left: 585px;
+       text-align: left;
+       font-size: 20px;
+}
+#bg2 {
+      height: 250px;
+      width:  600px;
+      background-color: white;
+      position: absolute;
+      top: 965px;
+      left: 600px;
+      box-shadow: 5px 10px 18px black;
+}
+#TS {
+      font-size: 300%;
+      font-family: impact;
+      color: black;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      animation-name: example;
+      animation-duration: 3s;
+      animation-delay: 0,5s;
+      animation-iteration-count: infinite;
+      position: absolute;
+      top: 1300px;
+      display: block;
+      left: 580px;
+}
+@keyframes example {
+    0%   {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    25%  {color:darkblue; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;}
+    50%  {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    75%  {color:darkblue; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;}
+    100% {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+}
+#P2 {
+    height: 400px;
+    width:  570px;
+    position: absolute;
+    top: 1450px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+}
+#kmn3 {
+        position: absolute; 
+        top: 1450px;
+        font-family: arial;
+        width: 600px;
+        text-align: left;
+        left: 605px;
+}
+#bg3 {
+      height: 450px;
+      width:  620px;
+      background-color: white;
+      position: absolute;
+      top: 1440px;
+      left: 600px;
+      box-shadow: 5px 10px 18px black;
+}

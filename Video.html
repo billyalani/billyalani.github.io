@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="VideoCSS.css">
+</head>
+<body>
+<div id="MN">
+<a href="https://www.facebook.com"><img id="I1" src="https://png.icons8.com/ios/1600/facebook-circled-filled.png"></a>
+<a href="https://www.instagram.com"><img id="I2" src="http://pngimg.com/uploads/instagram/instagram_PNG16.png"></a>
+<a href="https://www.twitter.com"><img id="I3" src="https://png.icons8.com/metro/1600/twitter.png"></a>
+</div>
+<ul class="menu cf">
+  <li><a href="11.html">Home</a></li>
+  <li>
+    <a href="">Created By</a>
+    <ul class="submenu">
+      <li><a href="https://www.instagram.com/celani_de/">Βασιλης</a></li>
+      <li><a href="">Εβελινα</a></li>
+      <li><a href="">Φανη</a></li>
+      <li><a href="">Ερρικα</a></li>
+      <li><a href="">Αντιγονη</a></li>
+    </ul>			
+  </li>
+  <li><a href="">σχολειο</a></li>
+  <li><a href="">video</a></li>
+  <li onclick="topFunction3()"><a href="">σχετικα με εμας</a></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kKwIP82XsbE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="Video"></iframe>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 1500;
+    document.documentElement.scrollTop = 1500;
+}
+// Video 
+function topFunction3() {
+                               window.alert('Γειά σου boy!');
+}
+</script>
+</body>
+</html>
