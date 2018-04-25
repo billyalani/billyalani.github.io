@@ -142,7 +142,7 @@ body {
        background-image:url('http://www.gettingsmart.com/wp-content/uploads/2017/09/artificial-intelligence-education.jpg');
        background-size: 100%;
        background-attachment: fixed;
-       height: 10000px;
+       height: 4520px;
 }
 #I1 {
      height: 55px;
@@ -354,4 +354,258 @@ body {
       top: 1440px;
       left: 600px;
       box-shadow: 5px 10px 18px black;
+}
+#SSE{
+      font-size: 300%;
+      font-family: impact;
+      color: black;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      animation-name: example;
+      animation-duration: 3s;
+      animation-delay: 0,5s;
+      animation-iteration-count: infinite;
+      position: absolute;
+      top: 2000px;
+      display: block;
+      left: 355px;
+}
+@keyframes example {
+    0%   {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    25%  {color:darkblue; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;}
+    50%  {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    75%  {color:darkblue; text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;}
+    100% {color:black; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+}
+#P3 {
+    height: 299px;
+    width:  220px;
+    position: absolute;
+    top: 2160px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+    left: 800px;
+}
+#kmn4 {
+        position: absolute; 
+        top: 2173px;
+        font-family: arial;
+        width: 600px;
+        text-align: left;
+        left: 207px;
+}
+#bg4 {
+      height: 80px;
+      width:  590px;
+      background-color: white;
+      position: absolute;
+      top: 2172px;
+      left: 207px;
+      box-shadow: 5px 10px 18px black;
+}
+#kmn5 {
+        position: absolute; 
+        top: 2280px;
+        font-family: arial;
+        width: 580px;
+        text-align: left;
+        left: 207px;
+}
+#bg5 {
+      height: 160px;
+      width:  590px;
+      background-color: white;
+      position: absolute;
+      top: 2270px;
+      left: 207px;
+      box-shadow: 5px 10px 18px black;
+}
+#P4 {
+    height: 299px;
+    width:  280px;
+    position: absolute;
+    top: 2500px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+    left: 200px;
+}
+#kmn6 {
+        position: absolute; 
+        top: 2510px;
+        font-family: arial;
+        width: 530px;
+        text-align: left;
+        left: 500px;
+}
+#bg6 {
+      height: 83px;
+      width:  530px;
+      background-color: white;
+      position: absolute;
+      top: 2505px;
+      left: 500px;
+      box-shadow: 5px 10px 18px black;
+}
+#P5 {
+    height: 130px;
+    width:  220px;
+    position: absolute;
+    top: 2600px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+    left: 495px;
+}
+#kmn7 {
+        position: absolute; 
+        top: 2615px;
+        font-family: arial;
+        width: 300px;
+        text-align: left;
+        left: 730px;
+}
+#bg7 {
+      height: 70px;
+      width:  305px;
+      background-color: white;
+      position: absolute;
+      top: 2610px;
+      left: 725px;
+      box-shadow: 5px 10px 18px black;
+}
+#P6 {
+    height: 141px;
+    width:  304px;
+    position: absolute;
+    top: 2850px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+    left: 725px;
+}
+#kmn8 {
+        position: absolute; 
+        top: 2859px;
+        font-family: arial;
+        width: 500px;
+        text-align: left;
+        left: 220px;
+}
+#bg8 {
+      height: 50px;
+      width:  500px;
+      background-color: white;
+      position: absolute;
+      top: 2860px;
+      left: 220px;
+      box-shadow: 5px 10px 18px black;
+}
+#kmn9 {
+        position: absolute; 
+        top: 2925px;
+        font-family: arial;
+        width: 500px;
+        text-align: left;
+        left: 220px;
+}
+#bg9 {
+      height: 180px;
+      width:  500px;
+      background-color: white;
+      position: absolute;
+      top: 2925px;
+      left: 220px;
+      box-shadow: 5px 10px 18px black;
+}
+#P7 {
+    height: 180px;
+    width:  300px;
+    position: absolute;
+    top: 3010px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+    left: 725px;
+}
+#P8 {
+    height: 353px;
+    width:  595px;
+    position: absolute;
+    top: 3240px;
+    margin: 5px;
+    box-shadow: 5px 10px 18px black;
+    left: 210px;
+}
+#kmn10 {
+        position: absolute; 
+        top: 3280px;
+        font-family: arial;
+        width: 200px;
+        text-align: left;
+        left: 830px;
+}
+#bg10 {
+      height: 300px;
+      width:  210px;
+      background-color: white;
+      position: absolute;
+      top: 3260px;
+      left: 822px;
+      box-shadow: 5px 10px 18px black;
+}
+#P9 {
+    height: 280px;
+    width:  280px;
+    position: absolute;
+    top: 3650px;
+    margin: 5px;
+    left: 210px;
+}
+#kmn11 {
+        position: absolute; 
+        top: 3720px;
+        font-family: arial;
+        width: 600px;
+        text-align: left;
+        left: 520px;
+}
+#bg11 {
+      height: 190px;
+      width:  630px;
+      background-color: white;
+      position: absolute;
+      top: 3700px;
+      left: 505px;
+      box-shadow: 5px 10px 18px black;
+}
+#P10 {
+    height: 334px;
+    width:  240px;
+    position: absolute;
+    top: 3900px;
+    margin: 5px;
+    left: 890px;
+    box-shadow: 5px 10px 18px black;
+}
+#kmn12 {
+        position: absolute; 
+        top: 3950px;
+        font-family: arial;
+        width: 600px;
+        text-align: left;
+        left: 270px;
+}
+#bg12 {
+      height: 170px;
+      width:  600px;
+      background-color: white;
+      position: absolute;
+      top: 3945px;
+      left: 270px;
+      box-shadow: 5px 10px 18px black;
+}
+#P11 {
+    height: 375px;
+    width:  500px;
+    position: absolute;
+    top: 4120px;
+    margin: 5px;
+    left: 270px;
+    box-shadow: 5px 10px 18px black;
 }
